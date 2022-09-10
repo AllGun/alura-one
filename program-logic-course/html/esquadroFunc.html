@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <canvas width="800" height="600"></canvas>
+
+    <script>
+      var tela = document.querySelector("canvas");
+      var pincel = tela.getContext("2d");
+
+      function drawingTriangle(xa, ya, xc, yc, cor) {
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+
+        pincel.moveTo(xa, ya);
+        pincel.lineTo(xc, yc);
+        pincel.lineTo(xa, yc);
+
+        pincel.fill();
+
+        pincel.fillStyle = "white";
+        pincel.beginPath();
+
+        pincel.moveTo(xa + 50, ya + 125);
+        pincel.lineTo(xc - 125, yc - 50);
+        pincel.lineTo(xa + 50, yc - 50);
+
+        pincel.fill();
+      }
+
+      drawingTriangle(100, 100, 500, 500, "black");
+    </script>
+  </body>
+</html>

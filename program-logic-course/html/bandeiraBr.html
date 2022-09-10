@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bandeira.css" />
+    <title>Brasil</title>
+  </head>
+  <body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+      var bandeira = document.querySelector("body");
+      var tela = document.querySelector("canvas");
+      var pincel = tela.getContext("2d");
+
+      pincel.fillStyle = "green";
+      pincel.fillRect(0, 0, 600, 400);
+
+      pincel.fillStyle = "yellow";
+      pincel.beginPath();
+      pincel.moveTo(20, 200);
+      pincel.lineTo(300, 20);
+      pincel.lineTo(580, 200);
+      pincel.fill();
+
+      pincel.fillStyle = "yellow";
+      pincel.beginPath();
+      pincel.moveTo(20, 200);
+      pincel.lineTo(300, 380);
+      pincel.lineTo(580, 200);
+      pincel.fill();
+
+      pincel.fillStyle = "blue";
+      pincel.beginPath();
+      pincel.arc(300, 200, 100, 0, 2 * 3.14);
+      pincel.fill();
+
+      function exibeAlerta(evento) {
+        alert("Salvar programa?");
+      }
+
+      bandeira.onclick = exibeAlerta;
+    </script>
+  </body>
+</html>

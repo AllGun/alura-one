@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Alura One | Oracle Next</title>
+  </head>
+  <body>
+    <canvas id="digi-canvas" width="600" height="400"> </canvas>
+
+    <script>
+      var digiCanvas = document.querySelector("#digi-canvas");
+      var brushTool = digiCanvas.getContext("2d");
+
+      brushTool.fillStyle = "#000000"; //.fillStyele sempre antes
+      brushTool.fillRect(0, 0, 600, 400); //.fillRect depois
+
+      brushTool.fillStyle = "green";
+      brushTool.fillRect(0, 0, 200, 400);
+
+      brushTool.fillStyle = "red";
+      brushTool.fillRect(400, 0, 200, 400);
+
+      brushTool.fillStyle = "yellow";
+      brushTool.beginPath();
+      brushTool.moveTo(300, 200);
+      brushTool.lineTo(200, 400);
+      brushTool.lineTo(400, 400);
+      brushTool.fill();
+    </script>
+  </body>
+</html>

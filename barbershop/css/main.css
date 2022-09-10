@@ -1,0 +1,66 @@
+/* Quando ativo o reset os itens da lista estão sem as bolinhas */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+  /* text-align: center; */
+  /* background-color: #f5dbb6; */
+  height: 100vh;
+}
+
+/* header */
+#banner {
+  width: 100%;
+  height: 20%;
+}
+
+.principal {
+    /* background: #f5dbb6 ; */
+    background: #cccccc ;
+    padding: 30px;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+/* main */
+/* main {
+    display: flex;
+} */
+
+p {
+  text-align: center;
+}
+
+#mission {
+  font-size: 20px;
+}
+
+em strong {
+  color: #ff0000;
+}
+
+.beneficios {
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.img-beneficios {
+    width:50%;
+}
+
+/* footer  */

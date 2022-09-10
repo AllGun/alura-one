@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#digi-canvas {
+  width: 600px;
+  height: 400px;
+  margin-top: 200px;
+}
