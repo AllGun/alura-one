@@ -11,18 +11,23 @@ body {
 }
 
 /* header */
+.titulo-principal{
+  padding-left: 20px;
+}
+
+
+/* background: #f5dbb6 ; */
 #banner {
   width: 100%;
   height: 20%;
 }
 
 .principal {
-    /* background: #f5dbb6 ; */
-    background: #cccccc ;
-    padding: 30px;
+  background: #cccccc;
+  padding: 30px;
 }
 
-h1 {
+.titulo-centralizado {
   color: red;
   text-align: center;
 }
@@ -45,22 +50,19 @@ em strong {
 }
 
 .beneficios {
-    background-color: #fff;
-}
-
-h2 {
-    text-align: center;
+  background-color: #fff;
+  padding: 20px;
 }
 
 ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
 }
 
 .img-beneficios {
-    width:50%;
+  width: 50%;
 }
 
 /* footer  */
