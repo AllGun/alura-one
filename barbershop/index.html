@@ -6,28 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alfred's Barbershop</title>
     <!-- css -->
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <!-- js  -->
     <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header>
       <div class="container">
-        <h1 class="titulo-principal">Alfred's Barbershop</h1>
+        <h1>
+          <img
+            id="logo"
+            src="./img/Brabus barbearia logotipo para barbearia masculina vintage(1).png"
+            alt="Logo da barbearia"
+          />
+        </h1>
         <nav>
           <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./produtos.html">Produtos</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="./contato.html">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <img class="banner" src="./img/barber-banner.png" alt="" />
     <main>
-      <img id="banner" src="./img/barber-banner.png" alt="" />
-      <div class="principal">
-        <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+      <section class="principal">
+        <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+        <img
+          class="barber-tools"
+          src="./img/utensilios.jpg"
+          alt="Imgagem com três farramentas que todo barbeiro usa"
+        />
         <p>
           Localizada no coração da cidade a
           <strong>Barbearia Alura</strong> traz para o mercado o que há de
@@ -48,22 +64,58 @@
           da moda. O atendimento possui padrão de excelência e agilidade,
           garantindo qualidade e satisfação dos nossos clientes.
         </p>
-      </div>
+      </section>
 
-      <div class="beneficios">
-        <h2 class="titulo-centralizado">Benefícios</h2>
-        <ul>
-          <li class="itens">O melhor atendimento;</li>
-          <li class="itens">Espaço diferenciado;</li>
-          <li class="itens">Ótima localização;</li>
-          <li class="itens">Estacionamento privativo;</li>
-          <li class="itens">Brinquedoteca</li>
-          <li class="itens">Profissionais qualificados.</li>
-        </ul>
+      <section class="mapa">
+        <h2 class="titulo-principal">Nosso estabelecimento</h2>
+        <p>Estamos localizado no coração da cidade.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4499774664805!2d-46.63452058453024!3d-23.58818986846979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1663769733805!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="300"
+          style="border: solid 2px #a6550f"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
 
-        <img src="./img/beneficios.jpg" class="img-beneficios" alt="" />
-      </div>
+      <section class="beneficios">
+        <h2 class="titulo-principal">Benefícios</h2>
+        <div class="conteudo-beneficios">
+          <ul class="lista-beneficios">
+            <li class="itens">O melhor atendimento;</li>
+            <li class="itens">Espaço diferenciado;</li>
+            <li class="itens">Ótima localização;</li>
+            <li class="itens">Estacionamento privativo;</li>
+            <li class="itens">Brinquedoteca;</li>
+            <li class="itens">Profissionais qualificados;</li>
+            <li class="itens">Pontualidade;</li>
+            <li class="itens">Limpeza.</li>
+          </ul>
+          <img src="./img/beneficios.jpg" class="img-beneficios" alt="" />
+        </div>
+
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/jfKfPfyJRdk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <img
+        class="logo-branco"
+        src="./img/logo-branco.png"
+        alt="Logo da barbearia"
+      />
+      <p class="copyright">&copy; 你好 Code - 2022</p>
+    </footer>
   </body>
 </html>

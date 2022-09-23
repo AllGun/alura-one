@@ -1,0 +1,137 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f2d0a7;
+  color: #523d2a;
+}
+
+header {
+  background: #eeeeee;
+  padding: 20px 0;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin-left: 15px;
+}
+
+nav a {
+  color: #523d2a;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #bf7e04;
+}
+
+/* main  */
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0 1em;
+}
+
+.barber-tools {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em 0;
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.beneficios {
+  padding: 3em 0;
+}
+
+.conteudo-beneficios {
+  display: flex;
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itens {
+  line-height: 1.5em;
+  /* list-style-type: disc; */
+}
+
+.itens:before {
+  content: "★ ";
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
+.container {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.img-beneficios {
+  width: 60%;
+}
+
+.video {
+  width: 560px;
+  margin: 2em auto;
+}
+
+/* footer  */
+
+footer {
+  text-align: center;
+  background-color: #523d2a;
+  /* position: absolute; */
+  width: 100vw;
+  bottom: 0;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 13px;
+  padding-bottom: 20px;
+}

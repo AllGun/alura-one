@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfred's Barbershop | Contato</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/contato.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <img
+            id="logo"
+            src="./img/Brabus barbearia logotipo para barbearia masculina vintage(1).png"
+            alt="Logo da barbearia"
+          />
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form action="">
+        <label for="fullname">Nome</label>
+        <input
+          type="text"
+          id="fullname"
+          class="input-default"
+          placeholder="Nome completo"
+          required
+        />
+
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          class="input-default"
+          maxlength="100"
+          placeholder="nome@email.com"
+          required
+        />
+
+        <label for="phone">Telefone</label>
+        <input
+          type="tel"
+          id="phone"
+          class="input-default"
+          maxlength="11"
+          placeholder="(XX) 9 XXXX-XXXX"
+        />
+
+        <label for="message">Mensagem</label>
+        <textarea
+          name=""
+          id="message"
+          cols="70"
+          rows="10"
+          class="input-default"
+        ></textarea>
+
+        <fieldsection>
+          <legend>Como prefere nosso contato?</legend>
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+              checked
+            />
+            E-mail</label
+          >
+          <label for="radio-phone"
+            ><input
+              type="radio"
+              name="contato"
+              value="phone"
+              id="radio-phone"
+            />Telefone</label
+          >
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contato"
+              value="whatsapp"
+              id="radio-whatsapp"
+            />Whatsapp</label
+          >
+        </fieldsection>
+
+        <fieldset>
+          <legend>Qual horário gostaria de ser atendido?</legend>
+          <select name="time" id="">
+            <option value="morning">Manhã (8:00 - 12:00)</option>
+            <option value="afternoon">Tarde (14:00 - 18:00)</option>
+            <option value="evening">Noite (18:00 - 20:00)</option>
+          </select>
+        </fieldset>
+
+        <label class="news-email" for="news-email"
+          ><input type="checkbox" id="news-email" />Gostaria de receber nossas
+          novidades por e-mail</label
+        >
+
+        <input type="submit" value="Enviar" class="send-btn" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Terça</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img
+        class="logo-branco"
+        src="./img/logo-branco.png"
+        alt="Logo da barbearia"
+      />
+      <p class="copyright">&copy; 你好 Code - 2022</p>
+    </footer>
+  </body>
+</html>
