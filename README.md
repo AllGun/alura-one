@@ -12,7 +12,7 @@ Alura Oracle Next Education Course - ONE
 
 
 ## ✒️ Autores
-
+* [Alfredo Gutemberg](https://www.linkedin.com/in/dev-alfredo-gutemberg)
 
 ## 📄 Licença
 
